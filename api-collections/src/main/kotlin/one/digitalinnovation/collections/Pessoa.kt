@@ -5,9 +5,7 @@ class Pessoa {
     var cpf: String = "123.123.123-11"
     private set
 
-    inner class Endereco {
-        var rua: String = "Rua teste"
-    }
+    fun pessoaInfo() = "$nome e $cpf"
 }
 
 fun main(){
@@ -15,5 +13,5 @@ fun main(){
 
     println(helder.nome)
     println(helder.cpf)
-    println(helder.Endereco().rua)
+    println(helder.pessoaInfo())
 }
